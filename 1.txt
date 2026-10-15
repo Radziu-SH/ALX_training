@@ -1,3 +1,4 @@
 init line
 master line 1
 f1 line 1
+master linia 2
