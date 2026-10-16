@@ -1,16 +1,15 @@
 
 name: GitHub Actions Demo
-stages:
-  - test
+
 on:
   - push
 jobs:
   build:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - run: echo 123 > test.html
 
 test:
-  run-on: ubuntu-latest
+  runs-on: ubuntu-latest
   steps:
     - run: test -f test.html
