@@ -9,7 +9,7 @@ jobs:
     steps:
       - run: echo 123 > test.html
 
-test:
-  runs-on: ubuntu-latest
-  steps:
-    - run: test -f test.html
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: test -f test.html
