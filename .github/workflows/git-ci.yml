@@ -10,6 +10,7 @@ jobs:
       - run: echo 123 > test.html
 
   test:
+  needs: build
     runs-on: ubuntu-latest
     steps:
       - run: test -f test.html
