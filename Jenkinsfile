@@ -5,7 +5,8 @@ pipeline {
 			steps {
 				checkout scm
 				sh 'echo 123 > test.html'
-				stash includes: 'test.html', name: 'app'		
+				stash includes: 'test.html', name: 'app'
+				archiveArtifacts artifacts: 'test.html', fingerprint: true		
 			}
 		}
 		stage('Test'){ 
