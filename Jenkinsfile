@@ -11,7 +11,7 @@ pipeline {
 		stage('Test'){ 
                 	steps { 
 				checkout scm
-				unstash: 'test.html'
+				unstash 'test.html'
                  		sh 'test -f test.html'
                 	}
         	}
